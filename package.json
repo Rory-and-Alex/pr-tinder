@@ -10,6 +10,7 @@
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
     "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
+    "test:travis": "npm-run-all --parallel test lint",
     "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
