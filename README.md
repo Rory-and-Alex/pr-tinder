@@ -1,4 +1,6 @@
 # Pull Request Tinder
+![Build Status](https://travis-ci.org/Rory-and-Alex/pr-tinder.svg?branch=master)
+
 
 ## Development Setup
 
