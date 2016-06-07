@@ -1,7 +1,7 @@
 # Pull Request Tinder
 ![Build Status](https://travis-ci.org/Rory-and-Alex/pr-tinder.svg?branch=master)
-![Code Climate](https://codeclimate.com/github/Rory-and-Alex/pr-tinder/badges/gpa.svg)
-![Test Coverage](https://codeclimate.com/github/Rory-and-Alex/pr-tinder/badges/coverage.svg)
+[![Code Climate](https://codeclimate.com/github/Rory-and-Alex/pr-tinder/badges/gpa.svg)](https://codeclimate.com/github/Rory-and-Alex/pr-tinder)
+[![Test Coverage](https://codeclimate.com/github/Rory-and-Alex/pr-tinder/badges/coverage.svg)](https://codeclimate.com/github/Rory-and-Alex/pr-tinder/coverage)
 
 ## Development Setup
 
