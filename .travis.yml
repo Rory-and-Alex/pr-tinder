@@ -7,5 +7,10 @@ node_js:
   - "4.2"
   - "4.1"
   - "4.0"
+addons:
+  code_climate:
+    repo_token:
+      secure: "qm9kHIX9I2v/rryZDX94oh10cgfGg9pImqOfGNdB7IkBiuzTeYsJG7X6mxOYUuPJxHPwT4JdNhCdf+fAHsl8uleGZOvyYZ3afaVupmlwuLLd1vI0XFwKIRCZKTz4s/fEIWnJwQYDSMp1tedvQQ4TdHesxXqWhqRPSx5T0JMFJv2OEScR+Dp6q5ywl/c8JMzQUsFHEDaEWSsmmCsEe/Pjjzv7cHAqM7jtyqPqhfvEfOwDlw3H5BvDs3yLHCfEmL8TpeGk7XyxnM2Lz2XZKcJHIDNAoBpnIxZg4QpG+V2js9LVSvoluRu0IsGrE1N8Vwxhe0BY+la9bYX2EbHycSTplbcmLBxd2pH50bf4+Hq3JyX0vSSC575vwhpLLC1wauVCf/o4M659TvPXuenOk01kzWy5w7B2tchP9PmPZEbmKzTx1wxF08uYF/lX2yX+iNfRsIxuuaTDjU62hjPjHEQTGFnEz2q/V1UF1Uabqjrhlztel3jbE0gbL05U8CY+658G33P1W110zbhbXdZARDbMxU3DSZpfQBkrdbr+GJDVgVS1TsSDSuf8BiFj5Sd+L0WkSq2mwuSrCN8GcxAyXMbypcOwuwph9jNi3ahjtD5peYeIlSXT2f8V4jrGr04SY4WkCG9PX+G231uyj/nHHO1dTLQX9g0tTQvTO7VSCPq8xTg="
 after_success:
   - npm run test:travis
+  - codeclimate-test-reporter < lcov.info
