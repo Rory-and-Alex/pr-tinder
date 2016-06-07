@@ -9,7 +9,7 @@
     "open:src": "babel-node tools/srcServer.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
-    "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
+    "test": "istanbul cover -x *.test.js _mocha -- tools/testSetup.js \"src/**/*.test.js\"",
     "test:travis": "npm-run-all --parallel test lint",
     "test:watch": "npm run test -- --watch"
   },
@@ -50,6 +50,7 @@
     "express": "4.13.4",
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.8.5",
+    "istanbul": "^0.4.3",
     "jsdom": "8.5.0",
     "mocha": "2.4.5",
     "nock": "8.0.0",
